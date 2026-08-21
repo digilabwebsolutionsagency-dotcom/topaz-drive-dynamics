@@ -3,6 +3,7 @@ import { Mail, Menu, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CONTACT, NAV_LINKS } from "@/lib/topaz-data";
 import { scrollToSection } from "@/lib/scroll";
+import logoAsset from "@/assets/topaz-logo.png.asset.json";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -49,18 +50,14 @@ export function Header() {
         }`}
       >
         <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3 lg:flex lg:justify-between">
-          <button onClick={() => go("home")} className="flex min-w-0 items-center gap-3 text-left">
-            <span className="grid size-10 shrink-0 place-items-center rounded-sm bg-[image:var(--gradient-gold)] font-display text-xl font-bold text-gold-foreground">
-              T
-            </span>
-            <span className="min-w-0">
-              <span className="block truncate font-display text-lg font-bold tracking-wide text-foreground sm:text-xl">
-                TOPAZ TRANSPORT
-              </span>
-              <span className="block truncate text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
-                logistics + plant hire
-              </span>
-            </span>
+          <button onClick={() => go("home")} className="flex min-w-0 items-center text-left">
+            <img
+              src={logoAsset.url}
+              alt="Topaz Transport CC — logistics and plant hire"
+              width={1163}
+              height={461}
+              className="h-12 w-auto sm:h-14 lg:h-16"
+            />
           </button>
 
           <nav className="hidden items-center gap-7 lg:flex">
