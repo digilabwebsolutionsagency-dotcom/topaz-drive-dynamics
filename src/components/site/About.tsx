@@ -69,8 +69,8 @@ export function About() {
 
           <div className="space-y-6">
             <img
-              src={aboutImg}
-              alt="Caterpillar excavators and dozers in the Topaz Transport equipment yard"
+              src={aboutImg.url}
+              alt="Topaz Transport truck and trailers on a Namibian road"
               width={1200}
               height={900}
               loading="lazy"
