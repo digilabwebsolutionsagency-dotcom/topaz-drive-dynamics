@@ -1,6 +1,6 @@
 import { ArrowRight, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImg from "@/assets/hero-fleet.jpg";
+import heroAsset from "@/assets/topaz-hero-truck.jpg.asset.json";
 import { scrollToSection } from "@/lib/scroll";
 
 const STATS = [
@@ -13,8 +13,8 @@ export function Hero() {
   return (
     <section id="home" className="relative isolate overflow-hidden bg-charcoal">
       <img
-        src={heroImg}
-        alt="Scania freight trucks and Caterpillar earthmoving equipment working on a Namibian site"
+        src={heroAsset.url}
+        alt="Topaz Transport Scania truck and trailers on a Namibian road"
         width={1920}
         height={1088}
         className="absolute inset-0 -z-10 size-full object-cover"
