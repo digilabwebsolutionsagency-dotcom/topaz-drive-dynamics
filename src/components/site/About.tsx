@@ -1,5 +1,5 @@
 import { Gauge, Globe2, HeartHandshake, Quote, Sparkles, Users } from "lucide-react";
-import aboutImg from "@/assets/about-yard.jpg";
+import aboutImg from "@/assets/topaz-truck-fleet.jpg.asset.json";
 
 const VALUES = [
   {
