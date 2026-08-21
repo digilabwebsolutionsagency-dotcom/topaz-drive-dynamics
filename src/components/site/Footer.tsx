@@ -1,5 +1,6 @@
 import { NAV_LINKS } from "@/lib/topaz-data";
 import { scrollToSection } from "@/lib/scroll";
+import logoAsset from "@/assets/topaz-logo.png.asset.json";
 
 export function Footer() {
   return (
@@ -7,19 +8,16 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-14">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <div className="flex items-center gap-3">
-              <span className="grid size-10 shrink-0 place-items-center rounded-sm bg-[image:var(--gradient-gold)] font-display text-xl font-bold text-gold-foreground">
-                T
-              </span>
-              <span>
-                <span className="block font-display text-lg font-bold tracking-wide text-white">
-                  TOPAZ TRANSPORT CC
-                </span>
-                <span className="block text-[11px] uppercase tracking-[0.26em] text-gold">
-                  logistics + plant hire
-                </span>
-              </span>
-            </div>
+            <img
+              src={logoAsset.url}
+              alt="Topaz Transport CC — logistics and plant hire"
+              width={1163}
+              height={461}
+              className="h-14 w-auto"
+            />
+            <p className="mt-3 text-[11px] uppercase tracking-[0.26em] text-gold">
+              Topaz Transport CC
+            </p>
             <p className="mt-4 max-w-sm text-sm">
               One-stop facility for all your logistics & plant hire needs.
             </p>
