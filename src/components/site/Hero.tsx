@@ -1,6 +1,6 @@
 import { ArrowRight, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImg from "@/assets/hero-fleet.jpg";
+import heroAsset from "@/assets/topaz-hero-truck.jpg.asset.json";
 import { scrollToSection } from "@/lib/scroll";
 
 const STATS = [
