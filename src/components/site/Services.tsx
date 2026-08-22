@@ -1,21 +1,30 @@
 import { ArrowUpRight, Network, Route, Weight } from "lucide-react";
 import { scrollToSection } from "@/lib/scroll";
+import freightImg from "@/assets/IMG-20260821-WA0046.jpg.asset.json";
+import abnormalImg from "@/assets/IMG-20260821-WA0044.jpg.asset.json";
+import contractImg from "@/assets/IMG-20260821-WA0045.jpg.asset.json";
 
 const SERVICES = [
   {
     icon: Network,
     title: "Transportation Management & Freight Brokerage",
     text: "End-to-end load dispatch and route optimization supported by industry-leading transport management technologies.",
+    image: freightImg.url,
+    alt: "Topaz Transport Scania with two branded curtain-side trailers on a Namibian highway",
   },
   {
     icon: Weight,
     title: "Specialized & Abnormal Load Transport",
     text: "Capable of transporting anything from consumer goods and food products to massive construction materials and abnormal loads.",
+    image: abnormalImg.url,
+    alt: "Topaz Transport Scania TP06 fitted with an abnormal load board",
   },
   {
     icon: Route,
     title: "Dedicated Contract Carriage (DCC)",
     text: "Tailored logistics solutions ensuring your shipments reach their destination on time and intact, every single run.",
+    image: contractImg.url,
+    alt: "Topaz Transport Scania parked on the roadside during a scheduled run",
   },
 ];
 
@@ -35,8 +44,15 @@ export function Services() {
             <button
               key={s.title}
               onClick={() => scrollToSection("contact")}
-              className="group glass-card rounded-xl p-7 text-left transition-all duration-300 hover:-translate-y-1.5 hover:border-gold/60"
+              className="group glass-card overflow-hidden rounded-xl text-left transition-all duration-300 hover:-translate-y-1.5 hover:border-gold/60"
             >
+              <img
+                src={s.image}
+                alt={s.alt}
+                loading="lazy"
+                className="h-44 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="p-7 pt-6">
               <div className="flex items-start justify-between gap-4">
                 <span className="grid size-12 place-items-center rounded-lg bg-[image:var(--gradient-gold)] text-gold-foreground">
                   <s.icon className="size-6" />
@@ -51,6 +67,7 @@ export function Services() {
                 Request this service
                 <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </span>
+              </div>
             </button>
           ))}
         </div>

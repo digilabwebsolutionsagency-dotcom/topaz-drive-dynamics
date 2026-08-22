@@ -15,6 +15,7 @@ export const NAV_LINKS = [
   { id: "about", label: "About Us" },
   { id: "services", label: "Services" },
   { id: "fleet", label: "Fleet & Equipment" },
+  { id: "gallery", label: "Gallery" },
   { id: "why", label: "Why Choose Us" },
   { id: "contact", label: "Contact Us" },
 ];

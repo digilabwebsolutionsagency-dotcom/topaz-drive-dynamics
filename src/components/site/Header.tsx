@@ -43,10 +43,8 @@ export function Header() {
       </div>
 
       <div
-        className={`border-b transition-colors ${
-          scrolled
-            ? "border-border bg-background/90 backdrop-blur-xl"
-            : "border-transparent bg-background/70 backdrop-blur-md"
+        className={`border-b bg-card transition-shadow ${
+          scrolled ? "border-border shadow-sm" : "border-transparent"
         }`}
       >
         <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3 lg:flex lg:justify-between">
