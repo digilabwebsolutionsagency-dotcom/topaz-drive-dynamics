@@ -6,6 +6,7 @@ import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
 import { Services } from "@/components/site/Services";
 import { Fleet } from "@/components/site/Fleet";
+import { Gallery } from "@/components/site/Gallery";
 import { WhyUs } from "@/components/site/WhyUs";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -45,6 +46,7 @@ function Index() {
         <About />
         <Services />
         <Fleet onInquire={handleInquire} />
+        <Gallery />
         <WhyUs />
         <Contact equipment={equipment} setEquipment={setEquipment} />
       </main>
