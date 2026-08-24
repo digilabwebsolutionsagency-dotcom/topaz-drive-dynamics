@@ -1,6 +1,5 @@
 import { NAV_LINKS } from "@/lib/topaz-data";
 import { scrollToSection } from "@/lib/scroll";
-import logoAsset from "@/assets/topaz-logo.png.asset.json";
 
 export function Footer() {
   return (
@@ -9,7 +8,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <img
-              src={logoAsset.url}
+              src={"/images/topaz-logo.png"}
               alt="Topaz Transport CC — logistics and plant hire"
               width={1163}
               height={461}
