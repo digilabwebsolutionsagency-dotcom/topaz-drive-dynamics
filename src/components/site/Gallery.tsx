@@ -1,29 +1,25 @@
-import coastImg from "@/assets/IMG-20260821-WA0048.jpg.asset.json";
-import roadsideImg from "@/assets/IMG-20260821-WA0045.jpg.asset.json";
-import pairImg from "@/assets/IMG-20260821-WA0040.jpg.asset.json";
-import crewImg from "@/assets/IMG-20260821-WA0051.jpg.asset.json";
 
 const SHOTS = [
   {
-    src: coastImg.url,
+    src: "/images/IMG-20260821-WA0048.jpg",
     alt: "Topaz Transport Scania hauling branded curtain-side trailers along the Namibian coast",
     caption: "Coastal corridor run",
     className: "sm:col-span-2 sm:row-span-2",
   },
   {
-    src: pairImg.url,
+    src: "/images/IMG-20260821-WA0040.jpg",
     alt: "Two Topaz Transport Scania horses fitted with abnormal load boards",
     caption: "Abnormal load ready",
     className: "",
   },
   {
-    src: roadsideImg.url,
+    src: "/images/IMG-20260821-WA0045.jpg",
     alt: "Topaz Transport Scania TP06 on a Namibian highway",
     caption: "TP06 on the B1",
     className: "",
   },
   {
-    src: crewImg.url,
+    src: "/images/IMG-20260821-WA0051.jpg",
     alt: "Topaz Transport team member in branded uniform in front of the fleet",
     caption: "Our people on site",
     className: "sm:col-span-2",

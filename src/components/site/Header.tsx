@@ -3,7 +3,6 @@ import { Mail, Menu, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CONTACT, NAV_LINKS } from "@/lib/topaz-data";
 import { scrollToSection } from "@/lib/scroll";
-import logoAsset from "@/assets/topaz-logo.png.asset.json";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -50,7 +49,7 @@ export function Header() {
         <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3 lg:flex lg:justify-between">
           <button onClick={() => go("home")} className="flex min-w-0 items-center text-left">
             <img
-              src={logoAsset.url}
+              src={"/images/topaz-logo.png"}
               alt="Topaz Transport CC — logistics and plant hire"
               width={1163}
               height={461}
